@@ -10,7 +10,7 @@ from llama_cpp import Llama
 from huggingface_hub import hf_hub_download
 model_path = hf_hub_download(
     repo_id="srabanmondal/mistral_cpu",  # replace with your actual repo
-    filename="unsloth.Q4_K_M.gguf",
+    filename="model.gguf",
     repo_type="model"
 )
 
