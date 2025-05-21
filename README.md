@@ -2,6 +2,7 @@
 A multi-threaded voice bot application that integrates speech-to-text (STT), text-to-speech (TTS), wake word detection, and a language model for real-time conversational capabilities. This project leverages a producer-consumer approach with parallel processing using threads and queues for fast inference on CPU.
 
 # 📁 Project Structure
+```
 voice-bot/</br>
 ├── app/</br>
 │   └── main.py               # Entry point to run the voice bot</br>
@@ -17,7 +18,7 @@ voice-bot/</br>
 ├── .env                      # Your Porcupine API key</br>
 ├── requirements.txt          # Python dependencies</br>
 └── README.md                 # Project guide</br>
-
+```
 ## ⚙️ Prerequisites
 Before running the bot, make sure your system has the following installed:
 
