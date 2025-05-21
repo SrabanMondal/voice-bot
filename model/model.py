@@ -28,14 +28,7 @@ def tokenize(text):
     tokens = [token for token in raw_tokens]
     return tokens
 
-# Load .env file from root directory
-#env_path = Path(__file__).resolve().parent.parent / '.env'
-#load_dotenv(dotenv_path=env_path)
 
-# Access environment variables
-SECRET_KEY = os.getenv('GEMINI_API')
-#genai.configure(api_key=SECRET_KEY)
-#token_buffer = []
 buffer_lock = threading.Lock()
 
 def stream_token_handler(token,sentence_queue, counter): 
