@@ -7,7 +7,15 @@ import time
 import re
 import string
 from llama_cpp import Llama
-MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
+from huggingface_hub import hf_hub_download
+model_path = hf_hub_download(
+    repo_id="srabanmondal/mistral_cpu",  # replace with your actual repo
+    filename="unsloth.Q4_K_M.gguf",
+    repo_type="model"
+)
+
+print(f"Model path: {model_path}")
+#MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
 def is_only_punctuation(text):
     text=text.strip()
     return all(char in string.punctuation for char in text) and len(text) > 0
@@ -44,7 +52,7 @@ def generate_text(text,sentence_queue, stop_event):
     global token_buffer
 
 # Path to your GGUF 4-bit model file
-    model_path = os.path.join(MODEL_DIR, "unsloth.Q4_K_M.gguf")
+    #model_path = os.path.join(MODEL_DIR, "unsloth.Q4_K_M.gguf")
 
 # Load the model (adjust n_ctx as needed for your use case)
     llm = Llama(

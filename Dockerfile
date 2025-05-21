@@ -34,6 +34,7 @@ RUN pip install coqui-tts
 RUN pip install faster-whisper
 RUN pip install llama-cpp-python
 RUN pip install sounddevice
+RUN pip install huggingface_hub
 # 🗃️ Copy application code
 COPY . .
 
