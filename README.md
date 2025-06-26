@@ -55,7 +55,7 @@ PORCUPINE=your-access-key-here
 ## 📦 Installation
 Clone the repo and navigate to it:
 ```sh
-git clone https://github.com/your-username/voice-bot.git
+git clone https://github.com/SrabanMondal/voice-bot.git
 cd voice-bot
 ```
 Install Python dependencies:
