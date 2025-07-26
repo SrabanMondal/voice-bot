@@ -1,0 +1,6 @@
+voicevenv/
+__pycache__/
+*.pyc
+*.log
+.env
+wakeup/devil.ppn
