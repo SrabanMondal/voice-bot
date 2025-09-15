@@ -75,11 +75,10 @@ python -m app.main
 Make sure your microphone is enabled and you’re using Python 3.12 (exact version 3.12.3 is best for compatibility with llama-cpp-python).
 
 ## Technical Details
-Multi-Threading: Each component (STT, TTS, wake word detection, and LLM) runs in its own thread for concurrent execution, improving responsiveness.</br>
-Producer-Consumer Approach: The TTS module uses a producer-consumer pattern with parallel processing via threads to achieve fast text-to-speech conversion.</br>
-Token Streaming: Queues are utilized to stream tokens from the language model to the TTS module, enabling efficient CPU-based inference.</br>
-Testing Status: The project is functional but requires extensive testing to ensure stability and performance under various conditions.</br>
-Multi-Threading: Each component (STT, TTS, wake word detection, and LLM) runs in its own thread for concurrent execution, improving responsiveness.
-Producer-Consumer Approach: The TTS module uses a producer-consumer pattern with parallel processing via threads to achieve fast text-to-speech conversion.
-Token Streaming: Queues are utilized to stream tokens from the language model to the TTS module, enabling efficient CPU-based inference.
-Testing Status: The project is functional but requires extensive testing to ensure stability and performance under various conditions.
+- **Multi-Threading**: Each component (STT, TTS, wake word detection, and LLM) runs in its own thread for concurrent execution, improving responsiveness.  
+
+- **Producer-Consumer Approach**: The TTS module uses a producer-consumer pattern with parallel processing via threads to achieve fast text-to-speech conversion.
+  
+- **Token Streaming**: Queues are utilized to stream tokens from the language model to the TTS module, enabling efficient CPU-based inference.
+
+- **Testing Status**: The project is functional but requires extensive testing to ensure stability and performance under various conditions.
